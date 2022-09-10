@@ -33,34 +33,34 @@ will belong to Music, Game, Family genres.
 
 ### Steps to the project: [Total score: 20 points]
 1. Import required libraries and read the data: [ Score: 1 point ]
- Import the required libraries and read the dataset.
- Check the first few samples, shape, info of the data and try to familiarize yourself with different features.
+- Import the required libraries and read the dataset.
+- Check the first few samples, shape, info of the data and try to familiarize yourself with different features.
 2. Data cleansing and Exploratory data analysis: [ Score: 10 points ]
- Check summary statistics of the dataset. List out the columns that need to be worked upon for model building.
- Check if there are any duplicate records in the dataset? if any drop them.
- Check the unique categories of the column 'Category', Is there are any invalid category? If yes drop them.
- Check if there are missing values present in the column Rating, If any? drop them and Convert ratings to high
+- Check summary statistics of the dataset. List out the columns that need to be worked upon for model building.
+- Check if there are any duplicate records in the dataset? if any drop them.
+- Check the unique categories of the column 'Category', Is there are any invalid category? If yes drop them.
+- Check if there are missing values present in the column Rating, If any? drop them and Convert ratings to high
 and low categories(>3.5 is high rest low) and store it in a new column ‘Rating_category’.
- Check the distribution of the newly created column 'Rating_category' and comment on the distribution.
- Convert the column "Reviews" to numeric datatype and check the presence of outliers in the column and
+- Check the distribution of the newly created column 'Rating_category' and comment on the distribution.
+- Convert the column "Reviews" to numeric datatype and check the presence of outliers in the column and
 handle the outliers using transformation approach.
- The column 'Size' contains alphanumeric values, handle the non numeric data and convert the column into
+- The column 'Size' contains alphanumeric values, handle the non numeric data and convert the column into
 suitable datatype. (hint: Replace M with 1 million and K with 1 thousand, and drop/impute the entries where
 size='Varies with device').
- Check the column 'Installs', handle the unwanted characters and convert the column into suitable dataype.
- Check the column 'Price', remove the unwanted characters and convert the column into suitable datatype.
+- Check the column 'Installs', handle the unwanted characters and convert the column into suitable dataype.
+- Check the column 'Price', remove the unwanted characters and convert the column into suitable datatype.
 3. Data Preparation for model building: [ Score: 2 points ]
- Drop the columns which you think redundant for the analysis.(suggestion: drop column 'rating', since we
+- Drop the columns which you think redundant for the analysis.(suggestion: drop column 'rating', since we
 created a new feature from it (i.e. rating_category) will use that as target.)
- For the target column 'Rating_category' Replace 'high' as 1 and 'low' as 0.
- Encode the categorical columns.
- Segregate the target and independent features.
- Split the dataset into train and test.
- Standardize the data, so that the values are within a particular range.
+- For the target column 'Rating_category' Replace 'high' as 1 and 'low' as 0.
+- Encode the categorical columns.
+- Segregate the target and independent features.
+- Split the dataset into train and test.
+- Standardize the data, so that the values are within a particular range.
 4. Model training, and testing: [ Score: 5 points ]
- Write a function to fit and print the model predictions, input parameters would be model, train, and test data.
- Use the above function and train a Decision tree, Random Forest, Bagging, Boosting, and Stacked Classifier
+- Write a function to fit and print the model predictions, input parameters would be model, train, and test data.
+- Use the above function and train a Decision tree, Random Forest, Bagging, Boosting, and Stacked Classifier
 models and make predictions on test data and evaluate the models.
 5. Conclusion and improvisation: [ Score: 2 point ]
- Compare and write your conclusions and steps to be taken in future in order to improve the accuracy of the
+- Compare and write your conclusions and steps to be taken in future in order to improve the accuracy of the
 model.
